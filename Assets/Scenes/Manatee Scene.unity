@@ -383,7 +383,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 351b357d8278b4b8da32f976c630e4af, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Spawner
-  prefab: {fileID: 2324353851470563729, guid: 3c47add8fa203834f9b7413d453b9ccd, type: 3}
+  prefab: {fileID: 5155508226604045049, guid: 6078f3fe0ce9d1643a899a9516a0ccc3, type: 3}
   spawnRadius: 5
   spawnCount: 200
   colour: {r: 0, g: 0, b: 0, a: 0}
