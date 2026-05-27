@@ -24,6 +24,10 @@ public class BoidSettings : ScriptableObject
     public float boundsRadius = .27f;
     public float avoidCollisionWeight = 10;
     public float collisionAvoidDst = 5;
+    
+    [Header("Simulation Gizmos")] public bool showCohesionGizmos = true;
+    public bool showSeprationGizmos;
+    public bool showAlignmentGizmos;
 
     #endregion
 }
