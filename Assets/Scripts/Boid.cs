@@ -1,4 +1,5 @@
-﻿using System.Collections;
+﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
@@ -28,6 +29,11 @@ public class Boid : MonoBehaviour
     [HideInInspector] public Vector3 avgAvoidanceHeading;
     [HideInInspector] public Vector3 centreOfFlockmates;
     [HideInInspector] public int numPerceivedFlockmates;
+    
+
+    private Vector3 alignmentForce;
+    private Vector3 cohesionForce;
+    private Vector3 seperationForce;
 
     #endregion
 
@@ -79,10 +85,9 @@ public class Boid : MonoBehaviour
 
             Vector3 offsetToFlockmatesCentre = (centreOfFlockmates - position);
 
-            var alignmentForce = SteerTowards(avgFlockHeading) * settings.alignWeight;
-            var cohesionForce = SteerTowards(offsetToFlockmatesCentre) * settings.cohesionWeight;
-            var seperationForce = SteerTowards(avgAvoidanceHeading) * settings.seperateWeight;
-
+             alignmentForce = SteerTowards(avgFlockHeading) * settings.alignWeight;
+             cohesionForce = SteerTowards(offsetToFlockmatesCentre) * settings.cohesionWeight;
+             seperationForce = SteerTowards(avgAvoidanceHeading) * settings.seperateWeight;
             acceleration += alignmentForce;
             acceleration += cohesionForce;
             acceleration += seperationForce;
@@ -142,8 +147,39 @@ public class Boid : MonoBehaviour
     Vector3 SteerTowards(Vector3 vector)
     {
         Vector3 v = vector.normalized * settings.maxSpeed - velocity;
-        
         return Vector3.ClampMagnitude(v, settings.maxSteerForce);
+    }
+
+
+    private void OnDrawGizmosSelected()
+    {
+        if (!Application.isPlaying || settings == null) return;
+
+        Vector3 startPos = transform.position;
+
+        if (settings.showCohesionGizmos || cohesionForce == Vector3.zero)
+        {
+            Gizmos.color = Color.red;
+            
+            Gizmos.DrawRay(startPos,cohesionForce.normalized *3f);
+            
+        }
+
+        if (settings.showAlignmentGizmos || alignmentForce == Vector3.zero)
+        {
+            Gizmos.color = Color.green;
+            
+            Gizmos.DrawRay(startPos , alignmentForce.normalized *3f);
+        }
+
+        if (settings.showSeprationGizmos || seperationForce == Vector3.zero)
+        {
+            Gizmos.color = Color.blue;
+            
+            Gizmos.DrawRay(startPos, seperationForce.normalized *3f);
+        }
+        
+        Gizmos.DrawWireSphere(startPos, settings.perceptionRadius);
     }
 
     #endregion
