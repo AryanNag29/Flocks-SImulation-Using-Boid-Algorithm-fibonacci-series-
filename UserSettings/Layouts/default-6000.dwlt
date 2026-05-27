@@ -19,7 +19,7 @@ MonoBehaviour:
     width: 1462.8572
     height: 877.71436
   m_ShowMode: 4
-  m_Title: Scene
+  m_Title: Game
   m_RootView: {fileID: 2}
   m_MinSize: {x: 875, y: 300}
   m_MaxSize: {x: 10000, y: 10000}
@@ -168,8 +168,8 @@ MonoBehaviour:
     y: 0
     width: 654.2857
     height: 450.2857
-  m_MinSize: {x: 201, y: 226}
-  m_MaxSize: {x: 4001, y: 4026}
+  m_MinSize: {x: 200, y: 200}
+  m_MaxSize: {x: 4000, y: 4000}
   m_ActualView: {fileID: 13}
   m_Panes:
   - {fileID: 13}
@@ -224,8 +224,8 @@ MonoBehaviour:
     y: 0
     width: 277.14288
     height: 821.7143
-  m_MinSize: {x: 277, y: 76}
-  m_MaxSize: {x: 4002, y: 4026}
+  m_MinSize: {x: 275, y: 50}
+  m_MaxSize: {x: 4000, y: 4000}
   m_ActualView: {fileID: 19}
   m_Panes:
   - {fileID: 19}
@@ -305,7 +305,7 @@ MonoBehaviour:
   m_Pos:
     serializedVersion: 2
     x: 0
-    y: 0
+    y: 36.57143
     width: 1462.8572
     height: 36
   m_SerializedDataModeController:
@@ -586,7 +586,7 @@ MonoBehaviour:
   m_Pos:
     serializedVersion: 2
     x: 0
-    y: 24
+    y: 72.571434
     width: 653.2857
     height: 424.2857
   m_SerializedDataModeController:
@@ -1159,9 +1159,9 @@ MonoBehaviour:
   m_AudioPlay: 0
   m_DebugDrawModesUseInteractiveLightBakingData: 0
   m_Position:
-    m_Target: {x: 112.19481, y: -72.98976, z: 64.88425}
+    m_Target: {x: 9.362194, y: -111.98221, z: -147.2681}
     speed: 2
-    m_Value: {x: 112.19481, y: -72.98976, z: 64.88425}
+    m_Value: {x: 9.362194, y: -111.98221, z: -147.2681}
   m_RenderMode: 0
   m_CameraMode:
     drawMode: 0
@@ -1208,20 +1208,20 @@ MonoBehaviour:
     m_gridOpacity: 0.5
     m_NearestPlaneToHandleMode: 0
   m_Rotation:
-    m_Target: {x: -0.23680718, y: -0.58812356, z: 0.18563715, w: -0.75057936}
+    m_Target: {x: 0.003366493, y: -0.9443504, z: 0.32854438, w: 0.009565656}
     speed: 2
-    m_Value: {x: 0.23680717, y: 0.58812356, z: -0.18563715, w: 0.7505793}
+    m_Value: {x: 0.003366759, y: -0.94442505, z: 0.32857034, w: 0.009566412}
   m_Size:
-    m_Target: 110.17208
+    m_Target: 109.28241
     speed: 2
-    m_Value: 110.17208
+    m_Value: 109.28241
   m_Ortho:
     m_Target: 0
     speed: 2
     m_Value: 0
   m_CameraSettings:
-    m_Speed: 1.5202405
-    m_SpeedNormalized: 0.7600003
+    m_Speed: 1.5802106
+    m_SpeedNormalized: 0.79000026
     m_SpeedMin: 0.001
     m_SpeedMax: 2
     m_EasingEnabled: 1
@@ -1443,7 +1443,7 @@ MonoBehaviour:
   m_Pos:
     serializedVersion: 2
     x: 0
-    y: 474.2857
+    y: 522.8572
     width: 653.2857
     height: 345.4286
   m_SerializedDataModeController:
@@ -1505,7 +1505,7 @@ MonoBehaviour:
       y: 21
       width: 653.2857
       height: 324.4286
-    m_Scale: {x: 1.75, y: 1.75}
+    m_Scale: {x: 1.75, y: 1.7499999}
     m_Translation: {x: 326.64285, y: 162.2143}
     m_MarginLeft: 0
     m_MarginRight: 0
@@ -1568,7 +1568,7 @@ MonoBehaviour:
   m_LockTracker:
     m_IsLocked: 0
   m_LastSelectedObjectID:
-    m_Data: 0
+    m_Data: 32632
 --- !u!114 &19
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -1591,8 +1591,8 @@ MonoBehaviour:
     m_TextWithWhitespace: "Inspector\u200B"
   m_Pos:
     serializedVersion: 2
-    x: 655.2857
-    y: 24
+    x: 654.28577
+    y: 72.571434
     width: 275.14288
     height: 795.7143
   m_SerializedDataModeController:
@@ -1644,8 +1644,8 @@ MonoBehaviour:
     m_TextWithWhitespace: "Hierarchy\u200B"
   m_Pos:
     serializedVersion: 2
-    x: 932.4286
-    y: 24
+    x: 931.4286
+    y: 72.571434
     width: 206.57141
     height: 795.7143
   m_SerializedDataModeController:
@@ -1664,7 +1664,8 @@ MonoBehaviour:
   m_SceneHierarchy:
     m_TreeViewState:
       scrollPos: {x: 0, y: 0}
-      m_SelectedIDs: []
+      m_SelectedIDs:
+      - m_Data: 32632
       m_LastClickedID:
         m_Data: 0
       m_ExpandedIDs:
@@ -1717,8 +1718,8 @@ MonoBehaviour:
     m_TextWithWhitespace: "Project\u200B"
   m_Pos:
     serializedVersion: 2
-    x: 1141
-    y: 24
+    x: 1140
+    y: 72.571434
     width: 321.85718
     height: 795.7143
   m_SerializedDataModeController:
@@ -1745,7 +1746,7 @@ MonoBehaviour:
     m_SkipHidden: 0
     m_SearchArea: 1
     m_Folders:
-    - Assets/Objects
+    - Assets/Settings
     m_Globs: []
     m_ProductIds: 
     m_AnyWithAssetOrigin: 0
@@ -1755,7 +1756,7 @@ MonoBehaviour:
   m_ViewMode: 1
   m_StartGridSize: 45
   m_LastFolders:
-  - Assets/Objects
+  - Assets/Settings
   m_LastFoldersGridSize: 45
   m_LastProjectPath: C:\Users\ajazz\Desktop\unity project\Boids-master\Flocks SImulation
     Using Boid Algorithm(fibonacci series)
@@ -1765,14 +1766,15 @@ MonoBehaviour:
   m_FolderTreeState:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs:
-    - m_Data: 33226
+    - m_Data: 33236
     m_LastClickedID:
-      m_Data: 33226
+      m_Data: 33236
     m_ExpandedIDs:
     - m_Data: 0
     - m_Data: 33106
     - m_Data: 33108
     - m_Data: 33110
+    - m_Data: 1000000000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -1836,10 +1838,11 @@ MonoBehaviour:
       m_Icon: {fileID: 0}
       m_ResourceFile: 
   m_ListAreaState:
-    m_SelectedInstanceIDs: []
+    m_SelectedInstanceIDs:
+    - m_Data: 32632
     m_LastClickedEntityId:
-      m_Data: 0
-    m_HadKeyboardFocusLastEvent: 0
+      m_Data: 32632
+    m_HadKeyboardFocusLastEvent: 1
     m_ExpandedInstanceIDs:
     - m_Data: 46284
     - m_Data: 32740
