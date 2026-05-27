@@ -63,12 +63,12 @@ public class BoidManager : MonoBehaviour
                 boids[i].centreOfFlockmates = boidData[i].flockCentre;
                 boids[i].avgAvoidanceHeading = boidData[i].avoidanceHeading;
                 boids[i].numPerceivedFlockmates = boidData[i].numFlockmates;
-
                 boids[i].UpdateBoid();
             }
 
             boidBuffer.Release();
         }
+       
     }
 
     #endregion
